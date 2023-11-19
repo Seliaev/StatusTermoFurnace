@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электропечи</title>
+</head>
+<body>
+    <h1>Текущие состояния электропечей</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>№ Печи</th>
+                <th>Питание</th>
+                <th>Активна(минут)</th>
+                <th>Температура</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for channel, data in data_dict.items() %}
+                <tr>
+                    <td>{{ channel }}</td>
+                    <td>{{ 'Включена' if data['status_supply'] == 1 else 'Выключена' }}</td>
+                    <td>{{ data['active_minute'] }}</td>
+                    <td>{{ data['temp_inside'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+<script>
+  // Скрипт для автообновления данных (get_data )
+</script>
+</body>
+</html>
