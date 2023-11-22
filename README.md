@@ -18,6 +18,8 @@ data_dict = get_data_from_sp(test=True)
 >test=True - симуляция включена
 >test=False - симуляция выключена
 
+Демо версия с выводом в html файл.
+http://45.132.1.65:5333/
 
 
 
@@ -39,3 +41,7 @@ data_dict = get_data_from_sp(test=True)
 ```
 >test=True enables simulation mode.
 >test=False disables simulation mode.
+
+
+Demo version with output to an html file.
+http://45.132.1.65:5333/
