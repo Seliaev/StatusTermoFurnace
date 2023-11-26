@@ -19,7 +19,7 @@ data_dict = get_data_from_sp(test=True)
 >test=False - симуляция выключена
 
 Демо версия с выводом в html файл.
-http://aicat.ru:5333/
+[http://45.132.1.65:5333/](http://45.132.1.65:5333/)
 
 
 
@@ -44,4 +44,4 @@ data_dict = get_data_from_sp(test=True)
 
 
 Demo version with output to an html file.
-http://aicat.ru:5333/
+[http://45.132.1.65:5333/](http://45.132.1.65:5333/)
